@@ -33,14 +33,6 @@ body {
   overflow: hidden;
 }
 
-@media only screen and (max-width:2706px){
-  body {
-    min-height: 65vh;
-    /* align-items: center; */
-    /* min-width: 20vh; */
-  }
-}
-
 
 .form.login {
   position: absolute;
