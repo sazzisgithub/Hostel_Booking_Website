@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Title -->
+	<title>HOSTELENGINE.COM</title>
+	<!-- FAVICON -->
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Caladea|Crete+Round|Merriweather|Mitr&display=swap"
+		rel="stylesheet">
+	<!--Bootstrap css-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!--Font Awesome css-->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!--Owl Carousel css-->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.transitions.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<!--Site Main Style css-->
+	<link rel="stylesheet" href="css/style.css">
+	<!--Responsive css-->
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<script src="js/cities.js"></script>
+</head>
+
+<body>
+	<!--Navbar Start-->
+	<nav class="navbar navbar-expand-lg">
+		<div class="container">
+			<!-- Website name -->
+			<a class="navbar-brand logo" href="index.html">HOSTELENGINE.COM</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="navbarCollapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link active">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="Revues.html" class="nav-link">review</a>
+					</li>
+					<li class="nav-item">
+						<a href="Contact.html" class="nav-link">contact</a>
+					</li>
+					<li class="nav-item">
+						<a href="login.html" class="nav-link">login</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--Navbar End-->
+
+	<!-- booking form -->
+	<div class="container-fluid">
+		<section id="hero_section" class="fix-margin">
+			<div class="container zindex">
+				<div class="col-lg-12 banner_cnt">
+					<h2>WELCOME TO HOSTEL BOOKING WEBSITE</h2>
+				</div>
+			</div>
+		</section>
+
+		<div class="booking-dropdown-form">
+			<select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt" class="form-control"
+				required></select>
+			<select name="cars" id="cars">
+				<option value="select city" id="select_city">Select City</option>
+			</select>
+			<select id="state" class="form-control" required></select>
+			<script language="javascript">print_state("sts");</script>
+			<button onClick="searchHosterl()">Search</button>
+		</div>
+	</div>	
+	<!-- booking form end -->
+
+	<!--room  detiles Section -->
+	<section id="room_detils">
+		<div class="container">
+			<div class="price_opt row">
+				<div class="col-lg-4 card">
+					<img src="img/new11.jpg" alt="">
+					<div class="content">
+						<h2>GIRLS HOSTEL IN BHOPAL</h2>
+						<div class="title_min"></div>
+						<p>Cum sociis natoque penatibus et magnis dis part urient montes, nascetur ridiculus mus.
+							Vestib
+							ulum id ligula porta felis euis.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 card">
+					<img src="img/new22.jpg" alt="">
+					<div class="content">
+						<h2>BOYS HOSTEL IN BANGALORE</h2>
+						<div class="title_min"></div>
+						<p>Cum sociis natoque penatibus et magnis dis part urient montes, nascetur ridiculus mus.
+							Vestib
+							ulum id ligula porta felis euis.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 card">
+					<img src="img/unnamed 55.jpg" alt="">
+					<div class="content">
+						<h2>GIRLS HOSTEL IN KOTA</h2>
+						<div class="title_min"></div>
+						<p>Cum sociis natoque penatibus et magnis dis part urient montes, nascetur ridiculus mus.
+							Vestib
+							ulum id ligula porta felis euis.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- room detiles end -->
+
+	<!-- ----Rooms Section start here -->
+	<section id="Rooms">
+		<div class="container">
+			<div class="row">
+				<div class="header-text">
+					<h2>HOSTEL <span>Rooms</span></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 card">
+					<img src="img/new999.jpg" alt="">
+					<h2>ASHIRWAD GIRLS – TWO SEATER</h2>
+				</div>
+				<div class="col-lg-3 card">
+					<img src="img/new777.jpg" alt="">
+					<h2>VINI GIRLS – TWO SEATER</h2>
+				</div>
+				<div class="col-lg-3 card">
+					<img src="img/new1000.jpg" alt="">
+					<h2>YOUTH BOYS – ONE SEATER</h2>
+				</div>
+				<div class="col-lg-3 card">
+					<img src="img/new888.JPG" alt="">
+					<h2>SHREE BOYS – TWO SEATER</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ----Rooms Section end here -->
+
+	<!-- ----about Section start here -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 left">
+					<h2>A LITTLE ABOUT US</h2>
+					<div class="title_min"></div>
+					<p>Hostel websites can provide travelers with information about a hostel, and allow them to book directly.</p>
+				</div>
+				<div class="col-lg-6">
+					<p></p>
+					<p>Hostels should offer the following facilities:</p>
+					<p>Clean, well-maintained shared bathrooms with hot water and adequate shower stalls, Lockers for guests to store valuables, 24/7 security surveillance, Free and fast Wi-Fi</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ----Abbout Section end here -->
+
+	<!-- ----GALLERY Section start here -->
+	<section id="GALLERY">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 header-text">
+					<h2><span>GALLERY</span></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 card">
+					<a data-fancybox="gallery" href="img/s1.jpg">
+						<img src="img/s1.jpg">
+					</a>
+				</div>
+				<div class="col-lg-3 card">
+					<a data-fancybox="gallery" href="img/s2.jpg">
+						<img src="img/s2.jpg">
+					</a>
+				</div>
+				<div class="col-lg-3 card">
+					<a data-fancybox="gallery" href="img/s3.jpg">
+						<img src="img/s3.jpg">
+					</a>
+				</div>
+				<div class="col-lg-3 card">
+					<a data-fancybox="gallery" href="img/s4.jpg">
+						<img src="img/s4.jpg">
+					</a>
+				</div>
+				<div class="col-lg-3 card">
+					<a data-fancybox="gallery" href="img/s5.jpg">
+						<img src="img/s5.jpg">
+					</a>
+				</div>
+				<div class="col-lg-3 card">
+					<a data-fancybox="gallery" href="img/s6.jpg">
+						<img src="img/s6.jpg">
+					</a>
+				</div>
+				<div class="col-lg-3 card">
+					<a data-fancybox="gallery" href="img/s7.jpg">
+						<img src="img/s7.jpg">
+					</a>
+				</div>
+				<div class="col-lg-3 card">
+					<a data-fancybox="gallery" href="img/s8.jpg">
+						<img src="img/s8.jpg">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ----GALLERY Section end here -->
+
+	<!-- ----testimonial Section start here -->
+	<section id="testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 left_content">
+					<div class="row">
+						<div class="col-12 ht-2">
+							<h2>LATEST <span>review</span></h2>
+						</div>
+					</div>
+					<h1>Trusted With 1,000+ Client</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, voluptas, velit?
+						Reprehenderit
+						aperiam</p>
+					<a href="#">Read More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+				</div>
+				<div class="col-lg-8">
+					<div id="testimonial-slider" class="owl-carousel">
+						<div class="testimonial">
+							<div class="pic">
+								<img src="img/people1.jpg" alt="" />
+							</div>
+							<h3 class="testimonial-title">
+								Williamson<small></small>
+							</h3>
+							<p class="description">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus
+								vel
+								ultricies viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex
+								volutpat a.
+								Cras eu augue ac nisl tempor commodo.
+							</p>
+						</div>
+						<div class="testimonial">
+							<div class="pic">
+								<img src="img/people2.jpg" alt="" />
+							</div>
+							<h3 class="testimonial-title">
+								kristiana<small></small>
+							</h3>
+							<p class="description">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus
+								vel
+								ultricies viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex
+								volutpat a.
+								Cras eu augue ac nisl tempor commodo.
+							</p>
+						</div>
+						<div class="testimonial">
+							<div class="pic">
+								<img src="img/people3.jpg" alt="" />
+							</div>
+							<h3 class="testimonial-title">
+								Steve Thomas<small></small>
+							</h3>
+							<p class="description">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim diam, tempus
+								vel
+								ultricies viverra, luctus in elit. Aliquam tempus blandit velit, in pharetra ex
+								volutpat a.
+								Cras eu augue ac nisl tempor commodo.
+							</p>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ----testimonial Section end here -->
+
+	<!-- ----blog Section start here -->
+	<section id="blog" class="blogs">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 header-text">
+					<h2>MY <span>BLOGS</span></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-4">
+					<div class="post">
+						<div class="img-wrapper">
+							<img src="img/new11.jpg" alt="" srcset="">
+							<div class="likes">
+								<span class="heart">
+									<i class="fas fa-heart"></i> 382
+								</span>
+							</div>
+						</div>
+						<div class="content-wrapper">
+							<h3 class="title">Gallary View</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam molestiae a hic in
+								velit
+								neque nobis recusandae ex!</p>
+						</div>
+						<div class="comments-readmore">
+							<div class="comments">
+								<span><i class="fas fa-comment-alt"></i></span>
+								<span class="comment-count">382</span>
+								<span class="text">comments</span>
+							</div>
+							<div class="readmore">
+								<div class="dot dot1"></div>
+								<div class="dot dot2"></div>
+								<div class="dot dot3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<div class="post">
+						<div class="img-wrapper">
+							<img src="img/new22.jpg" alt="" srcset="">
+							<div class="likes">
+								<span class="heart">
+									<i class="fas fa-heart"></i> 382
+								</span>
+							</div>
+						</div>
+						<div class="content-wrapper">
+							<h3 class="title">Near me</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam molestiae a hic in
+								velit
+								neque nobis recusandae ex!</p>
+						</div>
+						<div class="comments-readmore">
+							<div class="comments">
+								<span><i class="fas fa-comment-alt"></i></span>
+								<span class="comment-count">382</span>
+								<span class="text">comments</span>
+							</div>
+							<div class="readmore">
+								<div class="dot dot1"></div>
+								<div class="dot dot2"></div>
+								<div class="dot dot3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<div class="post">
+						<div class="img-wrapper">
+							<img src="img/new33.jpg" alt="" srcset="">
+							<div class="likes">
+								<span class="heart">
+									<i class="fas fa-heart"></i> 382
+								</span>
+							</div>
+						</div>
+						<div class="content-wrapper">
+							<h3 class="title">front view</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam molestiae a hic in
+								velit
+								neque nobis recusandae ex!</p>
+						</div>
+						<div class="comments-readmore">
+							<div class="comments">
+								<span><i class="fas fa-comment-alt"></i></span>
+								<span class="comment-count">382</span>
+								<span class="text">comments</span>
+							</div>
+							<div class="readmore">
+								<div class="dot dot1"></div>
+								<div class="dot dot2"></div>
+								<div class="dot dot3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ----blog Section end here -->
+
+	<!-- ----footer Section start here -->
+	<section id="footer-site">
+		<div class="footer-top">
+			<div class="footer-top-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 mt-1 text-center">
+							<h5>SOCIAL MEDIA</h5>
+							<h6>FOLLOW THE HOSTELENGINE.COM</h6>
+							<div class="footer-s-icons text-center">
+								<ul>
+									<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-6 mt-1 text-center">
+							<h5>NEWSLETTER</h5>
+							<h6>WE LOVE TO SHARE NEW OFFERS AND EXLUSIVE PROMOTIONS</h6>
+							<div class="footer-newsletter">
+								<form>
+									<input type="text" placeholder="ENTER YOUR E-MAIL ADDRESS" required="">
+									<button type="submit"><i class="fa fa-paper-plane"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper">
+				<div class="footer-LOGO">
+					<h2>HOSTELENGINE</h2>
+				</div>
+				<div class="footer-copyright">
+					<p>COPYRIGHT © 2024 HOSTELENGINE.COM</p>
+				</div>
+				<div class="footer-contact">
+					<ul>
+						<li><i class="fa fa-map-marker"></i> LNCT, BHOPAL, MADHYA PRADESH</li>
+						<li><i class="fa fa-phone"></i> +91-9847381972</li>
+						<li><i class="fa fa-paper-plane"></i> Hostelengine.com</a></li>
+					</ul>
+				</div>
+				<div class="footer-nav">
+					<ul>
+						<li><a href="#">SITEMAP</a></li>
+						<li><a href="#">PRIVACY POLICY</a></li>
+						<li><a href="#">TERMS OF USE</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ----footer Section end here -->
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+
+
+	<!--Jquery js-->
+	<script src="js/jquery.fancybox.min.js"></script>
+	<!--Bootstrap js---->
+	<script src="js/bootstrap.min.js"></script>
+	<!--ScrollIt js-->
+	<script src="js/scrollIt.min.js"></script>
+	<!--Owl-Carousel js---->
+	<script src="js/owl.carousel.min.js"></script>
+	<!--Owl-parallax js---->
+	<script src="js/parallax.min.js"></script>
+	<script src="js/pags/homeCtrl.js"></script>
+	<script src="js/costom.js"></script>
+	<script src="https://kit.fontawesome.com/f0ce275083.js"></script>
+</body>
+</html>

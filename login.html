@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Title -->
+    <title>HOSTELENGINE.COM</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Crete+Round|Merriweather|Mitr&display=swap"
+        rel="stylesheet">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Font Awesome css-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!--Owl Carousel css-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.transitions.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <!--Site Main Style css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--Responsive css-->
+    <!-- <link rel="stylesheet" href="css/contact.css"> -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/login.css">
+
+
+</head>
+
+<body>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Website name -->
+            <a class="navbar-brand logo" href="index.html"> HOSTELENGINE.COM</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="Revues.html" class="nav-link">review</a>
+                    </li>
+                    <li class="nav-item">
+						            <a href="Contact.html" class="nav-link">contact</a>
+					          </li>
+					
+                    <li class="nav-item">
+                      <a href="login.html" class="nav-link active">login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar End-->
+    
+    <section class="wrapper">
+        <div class="form signup">
+          <header>Signup</header>
+          <form action="#">
+            <input type="text" placeholder="Full name" required />
+            <input type="text" placeholder="Email address" required />
+            <input type="password" placeholder="Password" required />
+            <div class="checkbox">
+              <input type="checkbox" id="signupCheck" />
+              <label for="signupCheck">I accept all terms & conditions</label>
+            </div>
+            <input type="submit" value="Signup" />
+          </form>
+        </div>
+        <div class="form login">
+          <header>Login</header>
+          <form action="#">
+            <input type="text" placeholder="Email address" required />
+            <input type="password" placeholder="Password" required />
+            <a href="#">Forgot password?</a>
+            <input type="submit" value="Login" />
+          </form>
+        </div>
+        <script>
+          const wrapper = document.querySelector(".wrapper"),
+            signupHeader = document.querySelector(".signup header"),
+            loginHeader = document.querySelector(".login header");
+          loginHeader.addEventListener("click", () => {
+            wrapper.classList.add("active");
+          });
+          signupHeader.addEventListener("click", () => {
+            wrapper.classList.remove("active");
+          });
+        </script>
+    </section>
+
+    <!--Jquery js-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <!--Bootstrap js---->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--ScrollIt js-->
+    <script src="js/scrollIt.min.js"></script>
+    <!--Owl-Carousel js---->
+    <script src="js/owl.carousel.min.js"></script>
+    <!--Owl-parallax js---->
+    <script src="js/parallax.min.js"></script>
+    <script src="js/pags/contactCtrl.js"></script>
+    <script src="js/costom.js"></script>
+    <script src="https://kit.fontawesome.com/f0ce275083.js"></script>
+</body>
+
+</html>

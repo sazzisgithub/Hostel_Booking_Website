@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Title -->
+    <title>HOSTELENGINE.COM</title>
+	<!-- FAVICON -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Caladea|Crete+Round|Merriweather|Mitr&display=swap" rel="stylesheet">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--Font Awesome css-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!--Owl Carousel css-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.transitions.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!--Site Main Style css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--Responsive css-->
+    <link rel="stylesheet" href="css/admin_details.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+</head>
+
+<body>
+
+  <!-- PRELOADING START --> 
+   
+<!-- PRELOADING END -->
+
+<!--Navbar Start-->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <!-- Website name -->
+        <a class="navbar-brand logo" href="index.html"> HOSTELENGINE.COM</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link ">Home</a>
+                </li>
+				<!-- <li class="nav-item">
+                    <a href="reservation.html" class="nav-link">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reservation.html" class="nav-link active">Reservation</a>
+                </li> -->
+                <!-- <li class="nav-item">
+                    <a href="Chambres.html" class="nav-link ">Hostels</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="Revues.html" class="nav-link">review</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Contact.html" class="nav-link ">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link">login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Navbar End-->
+<div class="container-fluid">
+	<!--Hero Section Start-->
+	<section id="reservation_hero_section" class="Chambres fix-margin">
+	        <div class="container zindex">
+	            <div class="col-lg-12 banner_cnt">
+	            	<h2>ADMIN DETAILS</h2>
+				</div>
+	        </div> 
+	</section>
+	<!-- hero end here -->
+
+	<!-- reservation -->
+	<!-- form section start -->
+	<section id="form-section">
+		<div class="container">
+			<div class="row form-row">
+				<div class="col-lg-12 col-md-10 col-sm-12 col-12 p-2">
+					<div class="form-body">
+						<div class="heading-text">
+							<!-- <h5 class="form-heading">BOOKING FORM FOR STUDENTS</h5> -->
+							<h2 class="form-caption">Owner Info.</h2>
+						</div>
+						<hr>
+						<!-- form start -->
+						<form action="wed.py" method="post" class="booking-form">
+							<div class="row">
+
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="first" class="form-control" placeholder="Owner Name">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="address1" class="form-control" placeholder="Owner Email">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" class="form-control" placeholder="Contact no.">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" class="form-control" placeholder="Whatsapp no.">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" class="form-control" placeholder="Username">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="image" src="" class="form-control" placeholder="Autherization proof(document)">
+                                    </div>
+                                </div>
+
+							</div>
+                            <hr>
+
+                            <div class="heading-text">
+                                <!-- <h5 class="form-heading">BOOKING FORM FOR STUDENTS</h5> -->
+                                <h2 class="form-caption">Hostel Info</h2>
+                            </div>
+                            <hr>
+                            <div class="row">
+
+
+                                <div class="col-md-6">
+									<input type="text" name="first" class="form-control" placeholder="Hostel Name">
+								</div>
+								<div class="col-md-6">
+									<input type="text" name="last" class="form-control" placeholder="Tag-line For Hostel">
+								</div>
+
+    							<div class="col-md-6">
+									<input type="text" name="first" class="form-control" placeholder="Feature-1,Feature-2,Feature-3....">
+								</div>
+                                <div class="col-md-6">
+									<input type="text" name="first" class="form-control" placeholder="Max Seater-1,2,3">
+								</div>
+								<div class="col-md-6">
+									<input type="text" name="phone" class="form-control" placeholder="Price Seater-1">
+								</div>
+                                <div class="col-md-6">
+									<input type="text" name="phone" class="form-control" placeholder="Price Seater-2">
+								</div>
+								<div class="col-md-6">
+									<input type="text" name="state" class="form-control" placeholder="Price Seater-3">
+								</div>
+
+							</div>
+                            <hr>
+
+                            <div class="heading-text">
+                                <!-- <h5 class="form-heading">BOOKING FORM FOR STUDENTS</h5> -->
+                                <h2 class="form-caption">Address</h2>
+                            </div>
+                            <hr>
+
+                            <div class="row">
+								<div class="col-md-6">
+									<input type="text" name="first" class="form-control" placeholder="Address">
+								</div>
+                                <div class="col-md-6">
+									<input type="text" name="first" class="form-control" placeholder="City">
+								</div><div class="col-md-6">
+									<input type="text" name="first" class="form-control" placeholder="State">
+								</div><div class="col-md-6">
+									<input type="number" name="first" class="form-control" placeholder="Pin Code">
+								</div>
+                                <div class="col-md-6">
+									<input type="text" name="first" class="form-control" placeholder="Map Embedded Link">
+								</div>
+                            </div>
+                            <hr>
+
+                            <div class="heading-text">
+                                <!-- <h5 class="form-heading">BOOKING FORM FOR STUDENTS</h5> -->
+                                <h2 class="form-caption">Images</h2>
+                            </div>
+                            <hr>
+
+                            <div class="row">
+								<div class="col-md-6">
+									<input type="image" name="first" class="form-control" placeholder="Display Picture(hostel)">
+								</div>
+                                <div class="col-md-6">
+									<input type="image" name="first" class="form-control" placeholder="Feature-Pics">
+								</div>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <!-- <a href="#" class="btn">Book Now</a> -->
+                                <a href="success2.html" class="btn">
+                                    submit
+                                </a>
+                            </div>
+						</form>
+
+					</div>
+				</div>
+
+                
+				<!-- <div class="col-lg-4 col-md-4 col-sm-12 col-12 p-2">
+					
+					<div class="book-contact">
+                                <h5>HELP-</h5>
+                                <h2>Need Booking Help?</h2>
+                                <p>If you need help with booking, Our advisor team are 24/7 at your service to help you.</p>
+                                <p>
+                                	<a href="help@gmail.com">help@gamil.com</a>
+                                </p>
+                                <h3><i class="fa fa-phone-square"></i>1-779893289821</h3>
+                    </div>
+				</div> -->
+			</div>
+		</div>
+	</section>
+	<!-- form section end -->
+
+<!-- ----footer Section start here -->
+	<section id="footer-site">
+		<div class="footer-top">
+			<div class="footer-top-body">
+				<div class="container">
+					<div class="row">
+					<div class="col-lg-6 mt-1 text-center">
+                    <h5>SOCIAL MEDIA</h5>
+                    <h6>FOLLOW THE HOSTELENGINE.COM</h6>
+                    <div class="footer-s-icons text-center">
+                        <ul>
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+					<div class="col-lg-6 mt-1 text-center">
+						<h5>NEWSLETTER</h5>
+                    <h6>WE LOVE TO SHARE NEW OFFERS AND EXLUSIVE PROMOTIONS</h6>
+                    <div class="footer-newsletter">
+                        <form>
+                            <input type="text" placeholder="Enter Your Email" required="">
+                            <button type="submit"><i class="fa fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper">
+            <div class="footer-LOGO">
+                 <h2>HOSTELENGINE</h2>
+            </div>
+            <div class="footer-copyright">
+                <p>COPYRIGHT © 2022 HOSTELENGINE.COM HOTEL</p>
+            </div>
+            <div class="footer-contact">
+                <ul>
+                    <li><i class="fa fa-map-marker"></i> LNCT, BHOPAL, MADHYA PRADESH</li>
+                    <li><i class="fa fa-phone"></i> +91-9847381972</li>
+                    <li><i class="fa fa-paper-plane"></i> Hostelengine.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">SITEMAP</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERMS OF USE</a></li>
+                </ul>
+            </div>
+        </div>
+		</div>
+	</section>
+	<!-- ----fooer Section end here -->
+
+
+</div>
+
+
+
+
+
+<!--Jquery js-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="js/jquery-1.12.4.min.js"></script>
+ <script src="js/jquery-ui.js"></script>
+
+<!--Bootstrap js---->
+<script src="js/bootstrap.min.js"></script>
+
+<!--ScrollIt js-->
+<script src="js/scrollIt.min.js"></script>
+<!--Owl-Carousel js---->
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/pags/reservationCtrl.js"></script>
+<!--Owl-parallax js---->
+<script src="js/parallax.min.js"></script>
+<script src="js/costom.js"></script>
+<script src="https://kit.fontawesome.com/f0ce275083.js"></script>
+<script>
+	
+
+</script>
+
+</body>
+</html>
